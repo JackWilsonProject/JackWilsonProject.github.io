@@ -298,7 +298,7 @@ const FlipbookTour = () => {
                       </p>
                       <h2 className="title-text text-2xl md:text-3xl text-[#f9f5eb] mb-2">{currentLocation.title}</h2>
                       <p className="ink-text text-sm text-[#f9f5eb] opacity-90">{currentLocation.location}</p>
-                      <p className="ink-text text-xs text-[#f9f5eb] opacity-75 mt-1">Anno Domini {currentLocation.year}</p>
+                      <p className="ink-text text-xs text-[#f9f5eb] opacity-75 mt-1">{currentLocation.year}</p>
                     </div>
                   </div>
 
