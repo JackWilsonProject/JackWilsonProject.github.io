@@ -272,7 +272,7 @@ const FlipbookTour = () => {
                   <img
                     src={currentLocation.image || "/placeholder.svg"}
                     alt={currentLocation.title}
-                    className="w-full h-80 object-cover"
+                    className="w-full h-[500px] object-cover"
                   />
                 </div>
                 <p className="ink-text text-xs text-center mt-3 italic opacity-60">— From a Contemporary Sketch —</p>
