@@ -329,7 +329,7 @@ const FlipbookTour = () => {
                     {/* Editor's Note */}
                     <div className="bg-[#f5eee0] p-4 border border-[#d4c4a8]">
                       <p className="ink-text text-xs uppercase tracking-wide mb-2 opacity-60">
-                        [Editor's Annotation, Modern Era]
+                        Modern Era
                       </p>
                       <p className="ink-text text-sm leading-relaxed">{currentLocation.commentary}</p>
                     </div>
