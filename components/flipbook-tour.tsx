@@ -271,17 +271,19 @@ const FlipbookTour = () => {
 
             <div className="aged-paper decorative-border page-shadow ml-5 overflow-hidden h-[85vh] flex flex-col">
               {currentLocation.type === "blank" ? (
-                <div className="flex-1 min-h-[600px] flex flex-col items-center justify-center p-8 md:p-12 text-center overflow-y-auto">
-                  <h1 className="title-text text-3xl md:text-4xl text-[#2d2416] mb-6">{currentLocation.title}</h1>
+                <div className="flex-1 flex flex-col p-8 md:p-12 text-center overflow-hidden">
+                  <h1 className="title-text text-3xl md:text-4xl text-[#2d2416] mb-6 shrink-0">{currentLocation.title}</h1>
                   {currentLocation.location && (
-                    <p className="ink-text text-lg text-[#8b6e46] mb-8 italic">{currentLocation.location}</p>
+                    <p className="ink-text text-lg text-[#8b6e46] mb-8 italic shrink-0">{currentLocation.location}</p>
                   )}
-                  <div className="max-w-2xl">
-                    <p className="ink-text text-base md:text-lg leading-loose text-[#2d2416]">
-                      {currentLocation.description}
-                    </p>
+                  <div className="flex-1 overflow-y-auto custom-scrollbar px-4">
+                    <div className="max-w-2xl mx-auto">
+                      <p className="ink-text text-base md:text-lg leading-loose text-[#2d2416]">
+                        {currentLocation.description}
+                      </p>
+                    </div>
                   </div>
-                  <div className="mt-8 ornament text-2xl">❦</div>
+                  <div className="mt-8 ornament text-2xl shrink-0">❦</div>
                 </div>
               ) : (
                 <div className="flex-1 flex flex-col overflow-hidden">
