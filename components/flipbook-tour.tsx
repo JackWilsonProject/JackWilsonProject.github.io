@@ -10,6 +10,18 @@ const FlipbookTour = () => {
 
   const tourStops = [
     {
+      type: "blank",
+      title: "",
+      location: "",
+      year: "",
+      aesthetic: "",
+      image: "",
+      description: "",
+      burkeanAnalysis: "",
+      gilpinAnalysis: "",
+      commentary: "",
+    },
+    {
       title: "The Tree Cradles The Sunrise",
       location: "Poleta, Bishop",
       year: "2023",
@@ -104,6 +116,18 @@ const FlipbookTour = () => {
         "Gilpin appreciated reflections when slightly broken by movement, and here the faint ripples preserve irregularity, keeping the composition dynamically picturesque. The rough shoreline stones introduce tactile grounding. Burke would identify a gentle Sublime: immensity and clarity combine to produce astonishment without fear. The mirrored mountains evoke the uncanny doubling that Burke associates with heightened feeling.",
       commentary:
         "The image resonates with contemporary notions of peaceful retreat, a landscape that invites meditation yet subtly gestures toward deeper emotional horizons.",
+    },
+    {
+      type: "blank",
+      title: "",
+      location: "",
+      year: "",
+      aesthetic: "",
+      image: "",
+      description: "",
+      burkeanAnalysis: "",
+      gilpinAnalysis: "",
+      commentary: "",
     },
   ]
 
@@ -302,7 +326,7 @@ const FlipbookTour = () => {
                 {/* Editor's Note */}
                 <div className="bg-[#f5eee0] p-4 border border-[#d4c4a8]">
                   <p className="ink-text text-xs uppercase tracking-wide mb-2 opacity-60">
-                    [Editor's Annotation, Modern Era]
+                    Modern Era
                   </p>
                   <p className="ink-text text-sm leading-relaxed">{currentLocation.commentary}</p>
                 </div>
