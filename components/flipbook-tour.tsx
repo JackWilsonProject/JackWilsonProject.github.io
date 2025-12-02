@@ -73,9 +73,9 @@ const FlipbookTour = () => {
       image:
         "public/Trees.png",
       description:
-        "Dark pines rise from a rocky clearing, their trunks strong and straight beneath a sky mottled with heavy clouds. The forest feels solemn as though gathering its breath before an unseen change in weather."
+        "Dark pines rise from a rocky clearing, their trunks strong and straight beneath a sky mottled with heavy clouds. The forest feels solemn as though gathering its breath before an unseen change in weather.",
       burkeanAnalysis:
-        "Gilpin would value the variation in height, spacing, and texture, which prevents monotony and creates a natural rhythm. The stones scattered throughout bring necessary roughness, enhancing the scene’s tactile depth. Burke would locate the Sublime in atmospheric pressure, the weight of the clouds, the suggestion of imminent disturbance. The forest remains grounded, but the sky exerts a psychological force that colors the entire scene."
+        "Gilpin would value the variation in height, spacing, and texture, which prevents monotony and creates a natural rhythm. The stones scattered throughout bring necessary roughness, enhancing the scene’s tactile depth. Burke would locate the Sublime in atmospheric pressure, the weight of the clouds, the suggestion of imminent disturbance. The forest remains grounded, but the sky exerts a psychological force that colors the entire scene.",
       commentary:
         "This composition aligns closely with contemporary imagery of “the calm before the storm.” Gilpin’s structural control meets Burke’s emotional charge, generating a landscape dense with expectation.",
     },
@@ -85,9 +85,9 @@ const FlipbookTour = () => {
       year: "2023",
       aesthetic: "picturesque",
       image:
-        "public/Rocky Horror.png"
+        "public/Rocky Horror.png",
       description:
-        "The cliff face rises in monumental folds of shadowed limestone, its vertical planes carved by time into austere expressions. Above, storm clouds gather in iron-grey masses, interrupted only by a narrow rupture of blue.Gilpin would call attention to the cliff’s rugged projection, a quintessential picturesque attribute, though he might caution that the severity approaches the overwhelming. Foreground stones soften this danger, restoring some compositional balance. Burke would claim the image for the Sublime of obscurity and power: immense, shadowed forms; unclear depths; the sense of nature asserting a force beyond human scale. This cliff is not hostile, but it is undeniably indifferent."
+        "The cliff face rises in monumental folds of shadowed limestone, its vertical planes carved by time into austere expressions. Above, storm clouds gather in iron-grey masses, interrupted only by a narrow rupture of blue.Gilpin would call attention to the cliff’s rugged projection, a quintessential picturesque attribute, though he might caution that the severity approaches the overwhelming. Foreground stones soften this danger, restoring some compositional balance. Burke would claim the image for the Sublime of obscurity and power: immense, shadowed forms; unclear depths; the sense of nature asserting a force beyond human scale. This cliff is not hostile, but it is undeniably indifferent.",
       commentary:
         "The cliff evokes modern associations with geological awe and the Romantic imagination. It is a portrait of nature as something to be confronted rather than merely observed.",
     },
