@@ -15,7 +15,7 @@ const FlipbookTour = () => {
       year: "2023",
       aesthetic: "sublime",
       image:
-        "public/Tree in The morning (1).png",
+        "Tree in The morning (1).png",
       description:
         "A gentle quietude settles beneath the canopy of autumn branches. Their gold tones form a natural cornice, guiding the eye outward to the low-lying plain and the mountains reclining in soft blue distance. Nothing here calls for attention; the scene’s beauty rests in its restraint, a landscape content to breathe lightly.",
       burkeanAnalysis:
@@ -29,7 +29,7 @@ const FlipbookTour = () => {
       year: "1782",
       aesthetic: "picturesque",
       image:
-        "public/Morning Sun Rise (1).png",
+        "Morning Sun Rise (1).png",
       description:
         "Sunrise flares across the path, striking the earth with an almost ceremonial brilliance. Two walkers move toward the light, their figures modest against the radiance. The landscape becomes a threshold, something lived and something luminous at once.",
       gilpinAnalysis:
@@ -43,7 +43,7 @@ const FlipbookTour = () => {
       year: "2023",
       aesthetic: "sublime",
       image:
-        "public/Mountains with Trees in Forground.png",
+        "Mountains with Trees in Forground.png",
       description:
         "The ridge rises in pale, jagged stone, its harsh edges pressed against a sky swirling with cobalt and white. Pines gather below, dark and orderly, while golden grasses tremble at the base. The landscape feels charged, as though pulled taut between stillness and movement.",
       burkeanAnalysis:
@@ -57,7 +57,7 @@ const FlipbookTour = () => {
       year: "2023",
       aesthetic: "picturesque",
       image:
-        "public/Loom over the steep slopes.png",
+        "Loom over the steep slopes.png",
       description:
         "A chain of mountains recedes beneath brooding clouds. The rocky foreground appears ancient, worn smooth by time. Above, the sky holds the restrained tension of a storm yet to fully reveal itself.",
       gilpinAnalysis:
@@ -71,7 +71,7 @@ const FlipbookTour = () => {
       year: "2023",
       aesthetic: "sublime",
       image:
-        "public/Trees.png",
+        "Trees.png",
       description:
         "Dark pines rise from a rocky clearing, their trunks strong and straight beneath a sky mottled with heavy clouds. The forest feels solemn as though gathering its breath before an unseen change in weather.",
       burkeanAnalysis:
@@ -85,7 +85,7 @@ const FlipbookTour = () => {
       year: "2023",
       aesthetic: "picturesque",
       image:
-        "public/Rocky Horror.png",
+        "Rocky Horror.png",
       description:
         "The cliff face rises in monumental folds of shadowed limestone, its vertical planes carved by time into austere expressions. Above, storm clouds gather in iron-grey masses, interrupted only by a narrow rupture of blue.Gilpin would call attention to the cliff’s rugged projection, a quintessential picturesque attribute, though he might caution that the severity approaches the overwhelming. Foreground stones soften this danger, restoring some compositional balance. Burke would claim the image for the Sublime of obscurity and power: immense, shadowed forms; unclear depths; the sense of nature asserting a force beyond human scale. This cliff is not hostile, but it is undeniably indifferent.",
       commentary:
