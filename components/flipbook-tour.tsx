@@ -118,7 +118,7 @@ const FlipbookTour = () => {
         "The image resonates with contemporary notions of peaceful retreat, a landscape that invites meditation yet subtly gestures toward deeper emotional horizons.",
     },
     {
-      type: "",
+      type: "blank",
       title: "To Conclude",
       location: "",
       year: "2025",
@@ -271,8 +271,17 @@ const FlipbookTour = () => {
 
             <div className="aged-paper decorative-border page-shadow ml-5 overflow-hidden max-h-[90vh] overflow-y-auto">
               {currentLocation.type === "blank" ? (
-                <div className="flex-1 min-h-[600px] flex items-center justify-center">
-                  <p className="ink-text opacity-20 italic text-2xl">Ex Libris</p>
+                <div className="flex-1 min-h-[600px] flex flex-col items-center justify-center p-8 md:p-12 text-center">
+                  <h1 className="title-text text-3xl md:text-4xl text-[#2d2416] mb-6">{currentLocation.title}</h1>
+                  {currentLocation.location && (
+                    <p className="ink-text text-lg text-[#8b6e46] mb-8 italic">{currentLocation.location}</p>
+                  )}
+                  <div className="max-w-2xl">
+                    <p className="ink-text text-base md:text-lg leading-loose text-[#2d2416]">
+                      {currentLocation.description}
+                    </p>
+                  </div>
+                  <div className="mt-8 ornament text-2xl">❦</div>
                 </div>
               ) : (
                 <>
