@@ -269,9 +269,9 @@ const FlipbookTour = () => {
             {/* Book spine effect */}
             <div className="book-spine" />
 
-            <div className="aged-paper decorative-border page-shadow ml-5 overflow-y-auto h-[85vh] flex flex-col">
+            <div className="aged-paper decorative-border page-shadow ml-5 overflow-hidden h-[85vh] flex flex-col">
               {currentLocation.type === "blank" ? (
-                <div className="flex-1 min-h-[600px] flex flex-col items-center justify-center p-8 md:p-12 text-center">
+                <div className="flex-1 min-h-[600px] flex flex-col items-center justify-center p-8 md:p-12 text-center overflow-y-auto">
                   <h1 className="title-text text-3xl md:text-4xl text-[#2d2416] mb-6">{currentLocation.title}</h1>
                   {currentLocation.location && (
                     <p className="ink-text text-lg text-[#8b6e46] mb-8 italic">{currentLocation.location}</p>
@@ -284,66 +284,67 @@ const FlipbookTour = () => {
                   <div className="mt-8 ornament text-2xl">❦</div>
                 </div>
               ) : (
-                <>
+                <div className="flex-1 flex flex-col overflow-hidden">
                   {/* Header */}
                   <div
-                    className="p-6 border-b-2 border-[#8b6e46]"
+                    className="p-4 border-b-2 border-[#8b6e46] shrink-0"
                     style={{
                       background: "linear-gradient(to bottom, #a0826d, #8b6e46)",
                     }}
                   >
                     <div className="text-center">
-                      <p className="text-[#f9f5eb] text-xs mb-2 tracking-widest uppercase opacity-80">
+                      <p className="text-[#f9f5eb] text-xs mb-1 tracking-widest uppercase opacity-80">
                         {currentLocation.aesthetic === "sublime" ? "— The Sublime —" : "— The Picturesque —"}
                       </p>
-                      <h2 className="title-text text-2xl md:text-3xl text-[#f9f5eb] mb-2">{currentLocation.title}</h2>
-                      <p className="ink-text text-sm text-[#f9f5eb] opacity-90">{currentLocation.location}</p>
-                      <p className="ink-text text-xs text-[#f9f5eb] opacity-75 mt-1">{currentLocation.year}</p>
+                      <h2 className="title-text text-2xl text-[#f9f5eb] mb-1">{currentLocation.title}</h2>
+                      <div className="flex justify-center gap-4 text-[#f9f5eb] opacity-90">
+                        <p className="ink-text text-xs">{currentLocation.location}</p>
+                        <p className="ink-text text-xs">Anno Domini {currentLocation.year}</p>
+                      </div>
                     </div>
                   </div>
 
-                  {/* Image */}
-                  <div className="p-6">
-                    <div className="aged-image">
-                      <img
-                        src={currentLocation.image || "/placeholder.svg"}
-                        alt={currentLocation.title}
-                        className="w-full h-[500px] object-cover"
-                      />
+                  <div className="flex-1 overflow-hidden p-6 grid md:grid-cols-2 gap-8">
+                    {/* Left Column - Image & Observer */}
+                    <div className="flex flex-col gap-4 overflow-y-auto pr-2 custom-scrollbar">
+                      <div className="aged-image shrink-0">
+                        <img
+                          src={currentLocation.image || "/placeholder.svg"}
+                          alt={currentLocation.title}
+                          className="w-full h-auto max-h-[35vh] object-cover"
+                        />
+                      </div>
+                      <p className="ink-text text-xs text-center italic opacity-60 -mt-2">— From a Contemporary Sketch —</p>
+                      
+                      <div className="border-l-4 border-[#8b6e46] pl-4 pr-2">
+                        <p className="ink-text text-xs uppercase tracking-wide mb-2 opacity-60">The Observer's Account</p>
+                        <p className="ink-text text-sm leading-relaxed italic">{currentLocation.description}</p>
+                        <div className="text-right mt-1 ornament text-xs">❦</div>
+                      </div>
                     </div>
-                    <p className="ink-text text-xs text-center mt-3 italic opacity-60">— From a Contemporary Sketch —</p>
+
+                    {/* Right Column - Analysis */}
+                    <div className="flex flex-col gap-4 overflow-y-auto pr-2 custom-scrollbar">
+                      <div className="border-t-2 border-b-2 border-[#8b6e46] py-4">
+                        <p className="ink-text text-xs uppercase tracking-wide text-center mb-3 opacity-60">
+                          ⸙ Philosophical Disquisition ⸙
+                        </p>
+                        <p className="ink-text text-sm leading-relaxed px-2">
+                          {currentLocation.aesthetic === "sublime"
+                            ? currentLocation.burkeanAnalysis
+                            : currentLocation.gilpinAnalysis}
+                        </p>
+                      </div>
+
+                      <div className="bg-[#f5eee0] p-4 border border-[#d4c4a8]">
+                        <p className="ink-text text-xs uppercase tracking-wide mb-2 opacity-60">
+                          [Editor's Annotation, Modern Era]
+                        </p>
+                        <p className="ink-text text-sm leading-relaxed">{currentLocation.commentary}</p>
+                      </div>
+                    </div>
                   </div>
-
-                  {/* Content Sections */}
-                  <div className="p-6 space-y-6">
-                    {/* Observer's Account */}
-                    <div className="border-l-4 border-[#8b6e46] pl-4 pr-2">
-                      <p className="ink-text text-xs uppercase tracking-wide mb-3 opacity-60">The Observer's Account</p>
-                      <p className="ink-text text-base leading-loose italic">{currentLocation.description}</p>
-                      <div className="text-right mt-2 ornament text-sm">❦</div>
-                    </div>
-
-                    {/* Philosophical Disquisition */}
-                    <div className="border-t-2 border-b-2 border-[#8b6e46] py-4">
-                      <p className="ink-text text-xs uppercase tracking-wide text-center mb-3 opacity-60">
-                        ⸙ Philosophical Disquisition ⸙
-                      </p>
-                      <p className="ink-text text-sm leading-loose px-2">
-                        {currentLocation.aesthetic === "sublime"
-                          ? currentLocation.burkeanAnalysis
-                          : currentLocation.gilpinAnalysis}
-                      </p>
-                    </div>
-
-                    {/* Editor's Note */}
-                    <div className="bg-[#f5eee0] p-4 border border-[#d4c4a8]">
-                      <p className="ink-text text-xs uppercase tracking-wide mb-2 opacity-60">
-                        Modern Era
-                      </p>
-                      <p className="ink-text text-sm leading-relaxed">{currentLocation.commentary}</p>
-                    </div>
-                  </div>
-                </>
+                </div>
               )}
 
               {/* Navigation */}
