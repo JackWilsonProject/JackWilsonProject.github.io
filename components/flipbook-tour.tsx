@@ -138,7 +138,7 @@ const FlipbookTour = () => {
     setTimeout(() => {
       setCurrentStop((prev) => (prev + 1) % tourStops.length)
       setIsFlipping(false)
-    }, 600)
+    }, 800)
   }
 
   const prevStop = () => {
@@ -148,7 +148,7 @@ const FlipbookTour = () => {
     setTimeout(() => {
       setCurrentStop((prev) => (prev - 1 + tourStops.length) % tourStops.length)
       setIsFlipping(false)
-    }, 600)
+    }, 800)
   }
 
   const currentLocation = tourStops[currentStop]
@@ -215,16 +215,16 @@ const FlipbookTour = () => {
 
         .flipbook-page {
           transform-style: preserve-3d;
-          transition: transform 0.6s cubic-bezier(0.645, 0.045, 0.355, 1);
+          transition: transform 0.8s ease-in-out;
           transform-origin: left center;
         }
 
         .flipbook-page.flipping-forward {
-          animation: flipForward 0.6s cubic-bezier(0.645, 0.045, 0.355, 1) forwards;
+          animation: flipForward 0.8s ease-in-out forwards;
         }
 
         .flipbook-page.flipping-backward {
-          animation: flipBackward 0.6s cubic-bezier(0.645, 0.045, 0.355, 1) forwards;
+          animation: flipBackward 0.8s ease-in-out forwards;
         }
 
         @keyframes flipForward {
@@ -270,67 +270,72 @@ const FlipbookTour = () => {
             <div className="book-spine" />
 
             <div className="aged-paper decorative-border page-shadow ml-5 overflow-hidden max-h-[90vh] overflow-y-auto">
-              {/* Header */}
-              <div
-                className="p-6 border-b-2 border-[#8b6e46]"
-                style={{
-                  background:
-                    currentLocation.aesthetic === "sublime"
-                      ? "linear-gradient(to bottom, #3a3226, #2d2416)"
-                      : "linear-gradient(to bottom, #a0826d, #8b6e46)",
-                }}
-              >
-                <div className="text-center">
-                  <p className="text-[#f9f5eb] text-xs mb-2 tracking-widest uppercase opacity-80">
-                    {currentLocation.aesthetic === "sublime" ? "— The Sublime —" : "— The Picturesque —"}
-                  </p>
-                  <h2 className="title-text text-2xl md:text-3xl text-[#f9f5eb] mb-2">{currentLocation.title}</h2>
-                  <p className="ink-text text-sm text-[#f9f5eb] opacity-90">{currentLocation.location}</p>
-                  <p className="ink-text text-xs text-[#f9f5eb] opacity-75 mt-1">Anno Domini {currentLocation.year}</p>
+              {currentLocation.type === "blank" ? (
+                <div className="flex-1 min-h-[600px] flex items-center justify-center">
+                  <p className="ink-text opacity-20 italic text-2xl">Ex Libris</p>
                 </div>
-              </div>
+              ) : (
+                <>
+                  {/* Header */}
+                  <div
+                    className="p-6 border-b-2 border-[#8b6e46]"
+                    style={{
+                      background: "linear-gradient(to bottom, #a0826d, #8b6e46)",
+                    }}
+                  >
+                    <div className="text-center">
+                      <p className="text-[#f9f5eb] text-xs mb-2 tracking-widest uppercase opacity-80">
+                        {currentLocation.aesthetic === "sublime" ? "— The Sublime —" : "— The Picturesque —"}
+                      </p>
+                      <h2 className="title-text text-2xl md:text-3xl text-[#f9f5eb] mb-2">{currentLocation.title}</h2>
+                      <p className="ink-text text-sm text-[#f9f5eb] opacity-90">{currentLocation.location}</p>
+                      <p className="ink-text text-xs text-[#f9f5eb] opacity-75 mt-1">Anno Domini {currentLocation.year}</p>
+                    </div>
+                  </div>
 
-              {/* Image */}
-              <div className="p-6">
-                <div className="aged-image">
-                  <img
-                    src={currentLocation.image || "/placeholder.svg"}
-                    alt={currentLocation.title}
-                    className="w-full h-[500px] object-cover"
-                  />
-                </div>
-                <p className="ink-text text-xs text-center mt-3 italic opacity-60">— From a Contemporary Sketch —</p>
-              </div>
+                  {/* Image */}
+                  <div className="p-6">
+                    <div className="aged-image">
+                      <img
+                        src={currentLocation.image || "/placeholder.svg"}
+                        alt={currentLocation.title}
+                        className="w-full h-[500px] object-cover"
+                      />
+                    </div>
+                    <p className="ink-text text-xs text-center mt-3 italic opacity-60">— From a Contemporary Sketch —</p>
+                  </div>
 
-              {/* Content Sections */}
-              <div className="p-6 space-y-6">
-                {/* Observer's Account */}
-                <div className="border-l-4 border-[#8b6e46] pl-4 pr-2">
-                  <p className="ink-text text-xs uppercase tracking-wide mb-3 opacity-60">The Observer's Account</p>
-                  <p className="ink-text text-base leading-loose italic">{currentLocation.description}</p>
-                  <div className="text-right mt-2 ornament text-sm">❦</div>
-                </div>
+                  {/* Content Sections */}
+                  <div className="p-6 space-y-6">
+                    {/* Observer's Account */}
+                    <div className="border-l-4 border-[#8b6e46] pl-4 pr-2">
+                      <p className="ink-text text-xs uppercase tracking-wide mb-3 opacity-60">The Observer's Account</p>
+                      <p className="ink-text text-base leading-loose italic">{currentLocation.description}</p>
+                      <div className="text-right mt-2 ornament text-sm">❦</div>
+                    </div>
 
-                {/* Philosophical Disquisition */}
-                <div className="border-t-2 border-b-2 border-[#8b6e46] py-4">
-                  <p className="ink-text text-xs uppercase tracking-wide text-center mb-3 opacity-60">
-                    ⸙ Philosophical Disquisition ⸙
-                  </p>
-                  <p className="ink-text text-sm leading-loose px-2">
-                    {currentLocation.aesthetic === "sublime"
-                      ? currentLocation.burkeanAnalysis
-                      : currentLocation.gilpinAnalysis}
-                  </p>
-                </div>
+                    {/* Philosophical Disquisition */}
+                    <div className="border-t-2 border-b-2 border-[#8b6e46] py-4">
+                      <p className="ink-text text-xs uppercase tracking-wide text-center mb-3 opacity-60">
+                        ⸙ Philosophical Disquisition ⸙
+                      </p>
+                      <p className="ink-text text-sm leading-loose px-2">
+                        {currentLocation.aesthetic === "sublime"
+                          ? currentLocation.burkeanAnalysis
+                          : currentLocation.gilpinAnalysis}
+                      </p>
+                    </div>
 
-                {/* Editor's Note */}
-                <div className="bg-[#f5eee0] p-4 border border-[#d4c4a8]">
-                  <p className="ink-text text-xs uppercase tracking-wide mb-2 opacity-60">
-                    Modern Era
-                  </p>
-                  <p className="ink-text text-sm leading-relaxed">{currentLocation.commentary}</p>
-                </div>
-              </div>
+                    {/* Editor's Note */}
+                    <div className="bg-[#f5eee0] p-4 border border-[#d4c4a8]">
+                      <p className="ink-text text-xs uppercase tracking-wide mb-2 opacity-60">
+                        [Editor's Annotation, Modern Era]
+                      </p>
+                      <p className="ink-text text-sm leading-relaxed">{currentLocation.commentary}</p>
+                    </div>
+                  </div>
+                </>
+              )}
 
               {/* Navigation */}
               <div
