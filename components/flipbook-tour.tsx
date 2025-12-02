@@ -97,7 +97,7 @@ const FlipbookTour = () => {
       year: "2023",
       aesthetic: "sublime",
       image:
-        "public/Reflect Peace.png",
+        "Reflect Peace.png",
       description:
         "A lake lies perfectly still, mirroring the pale stone ridges and the muted sky. Pines fringe the far shore with quiet discipline, their reflections pooling like ink. The scene feels suspended, a double world held delicately in place.",
       burkeanAnalysis:
