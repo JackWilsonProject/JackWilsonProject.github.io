@@ -133,7 +133,7 @@ const FlipbookTour = () => {
     <div
       className="min-h-screen p-4 md:p-8 flex items-center justify-center"
       style={{
-        background: "linear-gradient(135deg, #2d1810 0%, #4a3426 50%, #2d1810 100%)",
+        background: "linear-gradient(135deg, #f5eee0 0%, #e8dcc4 50%, #f5eee0 100%)",
       }}
     >
       <style>{`
