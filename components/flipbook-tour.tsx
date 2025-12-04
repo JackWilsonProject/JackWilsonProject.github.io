@@ -12,8 +12,8 @@ const FlipbookTour = () => {
     // 1. INTRODUCTION
     {
       type: "blank",
-      title: "The Digital Claude Glass: A Picturesque Tour of Bishop, California",
-      location: "Introduction",
+      title: "The Digital Claude Glass",
+      location: "A Picturesque Tour of Bishop, California",
       year: "2025",
       aesthetic: "",
       image: "",
@@ -30,9 +30,8 @@ const FlipbookTour = () => {
           </p>
         </>
       ),
-      burkeanAnalysis: "",
-      gilpinAnalysis: "",
-      commentary: "",
+      theory: "",
+      exercise: "",
     },
     // 2. MAP SECTION
     {
@@ -43,118 +42,265 @@ const FlipbookTour = () => {
       aesthetic: "",
       image: "",
       description: "",
-      burkeanAnalysis: "",
-      gilpinAnalysis: "",
-      commentary: "",
+      theory: "",
+      exercise: "",
     },
     // 3. STOP 1
     {
-      title: "The Tree Cradles The Sunrise",
-      location: "Poleta, Bishop",
+      title: "Autumn Overlook",
+      location: "The Beautiful",
       year: "2023",
-      aesthetic: "sublime",
+      aesthetic: "picturesque",
       image: "Tree in The morning (1).png",
-      description:
-        "A gentle quietude settles beneath the canopy of autumn branches. Their gold tones form a natural cornice, guiding the eye outward to the low-lying plain and the mountains reclining in soft blue distance. Nothing here calls for attention; the scene’s beauty rests in its restraint, a landscape content to breathe lightly.",
-      burkeanAnalysis:
-       "Gilpin would immediately note the foreground “screen”, a device he considered essential to a well-ordered picturesque composition. The tree’s irregular curves introduce visual texture, that “negligent grace” he so prized. The distant mountains, partially obscured by atmospheric softness, contribute to what Burke calls “the sublime of obscurity”, a mild but perceptible stirring of awe where forms fade into uncertainty.Thus, the image registers as gently picturesque, yet tinged with the emotional hush of Burke’s softer sublime, beauty deepened by distance, not disrupted by it.",
-      commentary:
-        "This scene aligns with contemporary aesthetics of pastoral calm. Its framing could easily appear in modern landscape photography, revealing how Gilpin’s compositional principles continue to inform visual taste, even as Burke’s sense of atmospheric immensity lingers in the muted horizon.",
+      description: (
+        <>
+          <p className="mb-2"><strong>Arrival:</strong> Welcome. We are starting our journey where eighteenth-century picturesque tourists always began: in gentle, pastoral country. I painted this view trying to capture what Gilpin called "a state of ease and tranquility." Take a breath. Let the golden autumn settle around you before we climb toward something more intense.</p>
+          <p><strong>The View:</strong> Notice how the tree branches create a natural frame. Gilpin called this a "foreground screen," and he insisted every proper picturesque view needed one. Your eye should not crash into a scene; it should be invited through layers. See how the composition guides you: golden canopy, then middle plain, then those soft blue mountains dissolving into distance?</p>
+        </>
+      ),
+      theory: (
+        <>
+          <p className="mb-2">Gilpin argued in his <em>Three Essays on Picturesque Beauty</em> (1792) that landscapes required "rough, irregular, and intricate" elements to achieve picturesque status.</p>
+          <blockquote className="border-l-2 border-[#8b6e46] pl-4 italic my-2 text-[#5a4632]">
+            "Roughness forms the most essential point of difference between the beautiful and the picturesque."
+          </blockquote>
+          <p>Yet Burke also contributes to this scene. The vanishing horizon adds Burkean depth to Gilpin's compositional framework. You feel both the structural pleasure of picturesque arrangement and the emotional pull of sublime obscurity.</p>
+        </>
+      ),
+      exercise: (
+        <>
+          <p className="font-bold mb-1 text-[#8b6e46]">Why You Must Visit</p>
+          <p className="mb-2">I have captured the composition, but I cannot paint the crisp air. Gilpin urges you to visit this spot to practice the art of "correcting" nature.</p>
+          <ul className="list-disc pl-5">
+            <li><strong>On-Site Directive:</strong> When you stand here, hold up your hands to frame the view just as the trees do in the painting.</li>
+            <li><strong>The Reward:</strong> You will find that here—unlike the messy chaos of the city—nature orders itself perfectly for your pleasure. It is the perfect introduction to the wild.</li>
+          </ul>
+        </>
+      ),
     },
     // 4. STOP 2
     {
-      title: "Follow The Paved Way",
-      location: "White Mountain, Bishop",
-      year: "1782",
-      aesthetic: "picturesque",
+      title: "Sunrise Path",
+      location: "The Sublime of Light",
+      year: "2023",
+      aesthetic: "sublime",
       image: "Morning Sun Rise (1).png",
-      description:
-        "Sunrise flares across the path, striking the earth with an almost ceremonial brilliance. Two walkers move toward the light, their figures modest against the radiance. The landscape becomes a threshold, something lived and something luminous at once.",
-      gilpinAnalysis:
-        "Gilpin would appreciate the winding perspective of the road, which draws the viewer inward, offering a sense of unfolding narrative. The human figures animate the scene without disturbing its equilibrium.Yet it is Burke who speaks most forcefully here: this sunrise embodies the Sublime of overwhelming brightness. Its intensity borders on excess. The emotional force that produces Burke’s “delight blended with astonishment.” Light becomes more than illumination; it becomes an emotional event.",
-      commentary:
-        "The image mirrors cinematic tropes of awakening and journey. Gilpin’s compositional discipline meets Burke’s sensory power, producing a scene that feels vividly contemporary in its emotional pitch.",
+      description: (
+        <>
+          <p className="mb-2"><strong>Arrival:</strong> The path curves ahead, and suddenly - sunrise explodes across the landscape. Can you feel the difference from our first stop? We have left tranquility behind. Two figures walk toward that light, and we are going to follow them into what Burke called "the Sublime of overwhelming brightness."</p>
+          <p><strong>The View:</strong> The walkers give scale - they are tiny against this radiance. Gilpin always said human figures "animate" a landscape without disturbing it, and here they serve another purpose: they show us how overwhelming this light actually is. Look at how the road winds toward that glowing horizon. It pulls you forward, does it not?</p>
+        </>
+      ),
+      theory: (
+        <>
+          <p className="mb-2">Burke developed an entire theory about light as a sublime force. Moderate light produces beauty, but extreme light produces the sublime through sensory overwhelm.</p>
+          <blockquote className="border-l-2 border-[#8b6e46] pl-4 italic my-2 text-[#5a4632]">
+            "Extreme light, by overcoming the organs of sight, obliterates all objects, so as in its effect exactly to resemble darkness."
+          </blockquote>
+          <p>This sunrise is not gentle. It is almost blinding. It produces what Burke described as "delight blended with astonishment."</p>
+        </>
+      ),
+      exercise: (
+        <>
+          <p className="font-bold mb-1 text-[#8b6e46]">The Physical Challenge</p>
+          <p className="mb-2">A painting is static; the real sunrise is violent. You must walk this path at dawn to test Burke's theory yourself.</p>
+          <ul className="list-disc pl-5">
+            <li><strong>On-Site Directive:</strong> Walk toward the rising sun until you are forced to squint. Let the light "obliterate" the world around you.</li>
+            <li><strong>The Reward:</strong> You will feel the exact moment where "Beauty" dissolves into the "Sublime." It is an experience of delightful terror that no canvas can fully capture.</li>
+          </ul>
+        </>
+      ),
     },
     // 5. STOP 3
     {
       title: "Gold Garnish",
-      location: "The English Channel",
+      location: "The Sublime of Magnitude",
       year: "2023",
       aesthetic: "sublime",
       image: "Mountains with Trees in Forground.png",
-      description:
-        "The ridge rises in pale, jagged stone, its harsh edges pressed against a sky swirling with cobalt and white. Pines gather below, dark and orderly, while golden grasses tremble at the base. The landscape feels charged, as though pulled taut between stillness and movement.",
-      burkeanAnalysis:
-        "Gilpin would celebrate the bold irregularity of the mountains, their fractured lines, shifting angles, and rugged textures. The forest stands as a counterweight of vertical forms, grounding the eye. Burke would claim the scene as an example of the Sublime of magnitude: the ridge’s stark confrontation, the storm-tinged sky, the suggestion of geological immensity. It evokes awe without violence, power felt at a contemplative distance.",
-      commentary:
-        "The aesthetic resembles modern portrayals of wilderness as a site of renewal and confrontation. Romantic principles persist here, translated into contemporary sensibilities of vastness and natural drama.",
+      description: (
+        <>
+          <p className="mb-2"><strong>Arrival:</strong> You are standing at the base of the English Channel cliffs now, and everything has changed. Feel how the air shifts? Those pale, jagged ridges rise like fortifications against a turbulent sky. This is where Burke's theory truly awakens.</p>
+          <p><strong>The View:</strong> I struggled with this painting more than any other. I kept asking: how do you paint immensity? Those fractured limestone edges, the dark pines below, the golden grasses trembling - I was trying to capture what Burke called "the artificial infinite," where broken, irregular lines make something feel endless.</p>
+        </>
+      ),
+      theory: (
+        <>
+          <p className="mb-2">Burke argued that vastness was one of the primary sources of the sublime. But mere size was not enough - the form of that vastness mattered.</p>
+          <blockquote className="border-l-2 border-[#8b6e46] pl-4 italic my-2 text-[#5a4632]">
+            "Greatness of dimension is a powerful cause of the sublime."
+          </blockquote>
+          <p>When I painted these cliffs, I kept thinking: would Burke feel awe here? That mixture of attraction and fear he described? The cliff is not hostile, but it is undeniably indifferent.</p>
+        </>
+      ),
+      exercise: (
+        <>
+          <p className="font-bold mb-1 text-[#8b6e46]">Experience the Magnitude</p>
+          <p className="mb-2">On a screen, these cliffs are small. In reality, they are monsters. You must stand at the base to feel the "Vastness" Burke described.</p>
+          <ul className="list-disc pl-5">
+            <li><strong>On-Site Directive:</strong> Stand at the treeline and look straight up. Feel the strain in your neck and the vertigo in your mind.</li>
+            <li><strong>The Reward:</strong> A rare feeling of insignificance. In a world where we control everything, come here to stand beside something that ignores you completely.</li>
+          </ul>
+        </>
+      ),
     },
     // 6. STOP 4
     {
       title: "Loom Over Steep Slopes",
-      location: "Yosemite, California",
+      location: "Atmospheric Tension",
       year: "2023",
-      aesthetic: "picturesque",
+      aesthetic: "sublime",
       image: "Loom over the steep slopes.png",
-      description:
-        "A chain of mountains recedes beneath brooding clouds. The rocky foreground appears ancient, worn smooth by time. Above, the sky holds the restrained tension of a storm yet to fully reveal itself.",
-      gilpinAnalysis:
-        "Gilpin would praise the layered recession, foreground, middle distance, far peaks, each contributing to spatial clarity. The rough foreground produces the textural complexity he viewed as indispensable. But Burke reads the sky as the true emotional center. Its “magnificent gloom” creates a sublime atmosphere where tension and uncertainty dominate. The landscape’s grandeur lies not in form alone, but in meteorological mood.",
-      commentary:
-        "This image anticipates the aesthetic of cinematic storm sequences. Its emotional resonance lies in the charged atmosphere, echoing Burke’s theory of fear diluted by safety.",
+      description: (
+        <>
+          <p className="mb-2"><strong>Arrival:</strong> We have reached Yosemite now, and the atmosphere has thickened. Those mountains receding beneath heavy clouds - can you feel the weight pressing down? This is what Burke meant by "magnificent gloom."</p>
+          <p><strong>The View:</strong> I painted this trying to capture layers - Gilpin's obsession with spatial recession. But look up - that sky is the real subject, is it not? Brooding, restrained, holding back violence.</p>
+        </>
+      ),
+      theory: (
+        <>
+          <p className="mb-2">Burke transformed atmospheric conditions into emotional experiences. Darkness, obscurity, and threatening weather were not mere backdrop - they were sources of the sublime.</p>
+          <blockquote className="border-l-2 border-[#8b6e46] pl-4 italic my-2 text-[#5a4632]">
+            "To make any thing very terrible, obscurity seems in general to be necessary."
+          </blockquote>
+          <p>That sky creates what Burke called "magnificent gloom" - psychological pressure. The sublime happens when danger is present but at a distance that allows contemplation rather than panic.</p>
+        </>
+      ),
+      exercise: (
+        <>
+          <p className="font-bold mb-1 text-[#8b6e46]">A Tour of Obscurity</p>
+          <p className="mb-2">Why travel to see a view that is hidden by clouds? Because, as Burke argues, the imagination is stronger than the eye.</p>
+          <ul className="list-disc pl-5">
+            <li><strong>On-Site Directive:</strong> Visit on a storm day. Do not wait for the sun. Watch the peak vanish and try to guess how tall it truly is.</li>
+            <li><strong>The Reward:</strong> Your mind will build a mountain twice as high and twice as terrifying as the real one. You must go there to let your imagination run wild.</li>
+          </ul>
+        </>
+      ),
     },
     // 7. STOP 5
     {
       title: "Composure of the Pines",
-      location: "Coulterville",
+      location: "Before the Storm",
       year: "2023",
       aesthetic: "sublime",
       image: "Trees.png",
-      description:
-        "Dark pines rise from a rocky clearing, their trunks strong and straight beneath a sky mottled with heavy clouds. The forest feels solemn as though gathering its breath before an unseen change in weather.",
-      burkeanAnalysis:
-        "Gilpin would value the variation in height, spacing, and texture, which prevents monotony and creates a natural rhythm. The stones scattered throughout bring necessary roughness, enhancing the scene’s tactile depth. Burke would locate the Sublime in atmospheric pressure, the weight of the clouds, the suggestion of imminent disturbance. The forest remains grounded, but the sky exerts a psychological force that colors the entire scene.",
-      commentary:
-        "This composition aligns closely with contemporary imagery of “the calm before the storm.” Gilpin’s structural control meets Burke’s emotional charge, generating a landscape dense with expectation.",
+      description: (
+        <>
+          <p className="mb-2"><strong>Arrival:</strong> Step into the clearing. Dark pines surround you, their trunks like sentinels, and those mottled clouds overhead - they are not raining yet, but they will. The forest is holding its breath.</p>
+          <p><strong>The View:</strong> The scattered stones at their base provide the "roughness" Gilpin demanded. But notice: you are not looking at the trees. You are looking through them to that heavy sky. The trees frame the real subject - atmospheric tension.</p>
+        </>
+      ),
+      theory: (
+        <>
+          <p className="mb-2">Burke's theory of anticipation dominates here. He argued that the sublime could arise not just from present danger but from impending events.</p>
+          <p>The clouds exert psychological force. I tried to paint that heaviness, that sense of the atmosphere itself becoming a presence. Burke would recognize this as the sublime of expectation - where tension precedes actual violence.</p>
+        </>
+      ),
+      exercise: (
+        <>
+          <p className="font-bold mb-1 text-[#8b6e46]">The Auditory Experience</p>
+          <p className="mb-2">My brush cannot paint silence. This stop is not for the eyes, but for the ears.</p>
+          <ul className="list-disc pl-5">
+            <li><strong>On-Site Directive:</strong> Step into the pines and stop moving. Listen to the "Privation" of sound before the thunder rolls.</li>
+            <li><strong>The Reward:</strong> The heaviness of the air here creates a physical weight on the chest. It is the thrill of anticipation, the moment before the hammer falls.</li>
+          </ul>
+        </>
+      ),
     },
     // 8. STOP 6
     {
       title: "Rocky Horror",
-      location: "Inyo National Forest",
+      location: "Terror and Indifference",
       year: "2023",
-      aesthetic: "picturesque",
+      aesthetic: "sublime",
       image: "Rocky Horror.png",
-      description:
-        "The cliff face rises in monumental folds of shadowed limestone, its vertical planes carved by time into austere expressions. Above, storm clouds gather in iron-grey masses, interrupted only by a narrow rupture of blue.Gilpin would call attention to the cliff’s rugged projection, a quintessential picturesque attribute, though he might caution that the severity approaches the overwhelming. Foreground stones soften this danger, restoring some compositional balance. Burke would claim the image for the Sublime of obscurity and power: immense, shadowed forms; unclear depths; the sense of nature asserting a force beyond human scale. This cliff is not hostile, but it is undeniably indifferent.",
-      commentary:
-        "The cliff evokes modern associations with geological awe and the Romantic imagination. It is a portrait of nature as something to be confronted rather than merely observed.",
+      description: (
+        <>
+          <p className="mb-2"><strong>Arrival:</strong> Look up. No - really look up. That cliff face rises in shadowed limestone folds like a geological cathedral. This is where I nearly failed Burke's test. Is this Sublime enough?</p>
+          <p><strong>The View:</strong> Gilpin would love those rugged projections - quintessentially picturesque. But Burke? Burke would demand more. He would want those cliffs larger, those shadows deeper. When I painted this, I kept thinking: am I making a pretty picture or am I making something that produces astonishment?</p>
+        </>
+      ),
+      theory: (
+        <>
+          <p className="mb-2">This is where Gilpin and Burke split completely. Gilpin wrote about cliffs as compositional elements. But Burke pursued something darker and more psychological:</p>
+          <blockquote className="border-l-2 border-[#8b6e46] pl-4 italic my-2 text-[#5a4632]">
+            "The passion caused by the great and sublime in nature... is Astonishment; and astonishment is that state of the soul, in which all its motions are suspended, with some degree of horror."
+          </blockquote>
+          <p>That word - horror. Not fear exactly, but something that arrests you, that makes you aware of your own insignificance.</p>
+        </>
+      ),
+      exercise: (
+        <>
+          <p className="font-bold mb-1 text-[#8b6e46]">The Ultimate Test</p>
+          <p className="mb-2">This is the most difficult stop on our tour. It is not "pretty." It is overwhelming.</p>
+          <ul className="list-disc pl-5">
+            <li><strong>On-Site Directive:</strong> Do not look for a "frame" or a "composition." Simply confront the sheer wall of stone.</li>
+            <li><strong>The Reward:</strong> Astonishment. The feeling of your mind hitting a wall it cannot climb. It is a cleansing shock that only the true Sublime can provide.</li>
+          </ul>
+        </>
+      ),
     },
     // 9. STOP 7
     {
       title: "Reflect Peace",
-      location: "May Lake",
+      location: "Sublime Tranquility",
       year: "2023",
       aesthetic: "sublime",
       image: "Reflect Peace.png",
-      description:
-        "A lake lies perfectly still, mirroring the pale stone ridges and the muted sky. Pines fringe the far shore with quiet discipline, their reflections pooling like ink. The scene feels suspended, a double world held delicately in place.",
-      burkeanAnalysis:
-        "Gilpin appreciated reflections when slightly broken by movement, and here the faint ripples preserve irregularity, keeping the composition dynamically picturesque. The rough shoreline stones introduce tactile grounding. Burke would identify a gentle Sublime: immensity and clarity combine to produce astonishment without fear. The mirrored mountains evoke the uncanny doubling that Burke associates with heightened feeling.",
-      commentary:
-        "The image resonates with contemporary notions of peaceful retreat, a landscape that invites meditation yet subtly gestures toward deeper emotional horizons.",
+      description: (
+        <>
+          <p className="mb-2"><strong>Arrival:</strong> You have reached May Lake. Sit down. The journey has been intense - cliffs, storms, gathering dread. But here? Here everything mirrors itself. This is where the tour changes one last time.</p>
+          <p><strong>The View:</strong> Gilpin had strong opinions about reflections. He liked them slightly broken by movement. But something stranger is happening. That perfect doubling - the mountains and their mirrored mountains - creates what Burke might call "the uncanny." You see twice the landscape, twice the immensity.</p>
+        </>
+      ),
+      theory: (
+        <>
+          <p className="mb-2">Wordsworth offers a third voice here. In <em>Lines Written a Few Miles Above Tintern Abbey</em> (1798), he described moments when nature produces profound internal quiet:</p>
+          <blockquote className="border-l-2 border-[#8b6e46] pl-4 italic my-2 text-[#5a4632]">
+            "Until, the breath of this corporeal frame... And even the motion of our human blood... Almost suspended, we are laid asleep In body, and become a living soul"
+          </blockquote>
+          <p>This lake invites that Wordsworthian meditation. Yet the doubling also creates what Burke might recognize as the sublime through multiplication.</p>
+        </>
+      ),
+      exercise: (
+        <>
+          <p className="font-bold mb-1 text-[#8b6e46]">The Final Reflection</p>
+          <p className="mb-2">After the terror of the cliffs, you will need this water. This is the only place in the Sierra where the world doubles itself perfectly.</p>
+          <ul className="list-disc pl-5">
+            <li><strong>On-Site Directive:</strong> Sit by the water's edge. Look only at the reflection, not the mountain.</li>
+            <li><strong>The Reward:</strong> Wordsworth's "Living Soul." The adrenaline of the tour will fade, replaced by a profound, mirror-like clarity. You will leave this spot changed.</li>
+          </ul>
+        </>
+      ),
     },
     // 10. CONCLUSION
     {
       type: "blank",
-      title: "To Conclude",
+      title: "End of Tour",
       location: "",
       year: "2025",
       aesthetic: "",
       image: "",
-      description: "Across these landscapes, the enduring relevance of Gilpin and Burke becomes unmistakably clear. The watercolors balance picturesque structure, foreground screens, textural variety, irregularity with moments of sublime intensity, whether in overwhelming light, cavernous stone, or brooding atmosphere. In doing so, they reveal how eighteenth-century aesthetic theory continues to shape modern expectations of landscape, even when encountered in contemporary forms. The picturesque persists in the way we appreciate framing, distance, and roughened texture. The sublime lingers in our responses to magnitude, storm, and the unknown. These images, though recent, participate in a longstanding conversation between composition and emotion, structure and sensation. By engaging each image through a layered methodology, sensory perception, theoretical inquiry, and modern contextualization, this project demonstrates how older aesthetic systems can enrich contemporary interpretation. Rather than confining understanding, the Picturesque and the Sublime offer flexible modes of looking, deepening our recognition of both formal and emotional intelligence within these works. Ultimately, these landscapes remind us that nature remains a site of both harmony and astonishment. Whether through Gilpin’s compositional eye or Burke’s impassioned philosophy, the viewer is drawn into a continuum of perception where beauty and awe cohere not as opposites, but as partners in the ongoing human attempt to see the world more fully.",
-      burkeanAnalysis: "",
-      gilpinAnalysis: "",
-      commentary: "",
+      description: (
+        <>
+          <p className="mb-4">
+            You have walked through seven painted attempts to translate eighteenth-century aesthetic theory into visual experience. Some succeeded better than others - that is the honest truth.
+          </p>
+          <p className="mb-4">
+            Gilpin, Burke, and Wordsworth were not just describing nature; they were teaching people <em>how to feel</em> about nature. The picturesque taught composition. The sublime taught awe. And Wordsworth taught contemplative peace.
+          </p>
+          <p>
+            These categories still shape how we see. When you frame a photograph, you are channeling Gilpin. When a storm makes you pause in wonder, you are experiencing Burke. When a quiet landscape brings internal stillness, you are finding Wordsworth.
+          </p>
+          <div className="mt-8 text-center text-[#8b6e46] text-sm font-serif italic">
+            <p>The Digital Claude Glass: A Picturesque Tour of Bishop, California</p>
+            <p className="mt-2">Curated by Jackqueline (Jack) Wilson</p>
+            <p className="mt-1">2025</p>
+          </div>
+        </>
+      ),
+      theory: "",
+      exercise: "",
     },
   ]
 
@@ -184,18 +330,18 @@ const FlipbookTour = () => {
   const renderMapPage = () => (
     <div className="flex-1 flex flex-col p-8 md:p-12 overflow-hidden">
       <div className="map-container w-full h-full flex flex-col">
-        <h2 className="title-text text-2xl md:text-3xl text-[#3a5a6a] mb-6 text-center border-b-2 border-[#3a5a6a] pb-4">
+        <h2 className="title-text text-2xl md:text-3xl text-[#2d2416] mb-6 text-center border-b-2 border-[#8b6e46] pb-4">
           Our Route Through the Eastern Sierra
         </h2>
        
         <div
           className="route-map flex-1 p-6 rounded-lg overflow-y-auto custom-scrollbar"
           style={{
-            background: "#f0ede5", // Map background from original HTML
-            border: "1px solid #d4c5a9"
+            background: "rgba(249, 245, 235, 0.5)",
+            border: "1px dashed #8b6e46"
           }}
         >
-          <p className="italic text-[#6b8c9a] mb-6 text-center font-serif">
+          <p className="italic text-[#8b6e46] mb-6 text-center font-serif">
             From Bishop, California, radiating outward through seven locations
           </p>
          
@@ -211,22 +357,22 @@ const FlipbookTour = () => {
             ].map((stop) => (
               <div
                 key={stop.id}
-                className="location-item p-4 rounded bg-white border-l-4 border-[#6b8c9a] shadow-sm hover:bg-[#f8f6f1] transition-colors"
+                className="location-item p-4 rounded bg-white border-l-4 border-[#8b6e46] shadow-sm hover:bg-[#f5eee0] transition-colors"
               >
-                <div className="font-bold text-[#3a5a6a] text-sm uppercase tracking-wide mb-1">
+                <div className="font-bold text-[#5a4632] text-sm uppercase tracking-wide mb-1">
                   Stop {stop.id}
                 </div>
-                <div className="font-serif text-lg text-[#2c2c2c] leading-tight">
+                <div className="font-serif text-lg text-[#2d2416] leading-tight">
                   {stop.name}
                 </div>
-                <div className="text-sm text-[#888] italic mt-1">
+                <div className="text-sm text-[#8b6e46] italic mt-1">
                   {stop.desc}
                 </div>
               </div>
             ))}
           </div>
         </div>
-        <div className="mt-8 text-center ornament text-2xl shrink-0">✦</div>
+        <div className="mt-8 text-center ornament text-2xl shrink-0">❦</div>
       </div>
     </div>
   )
@@ -235,45 +381,54 @@ const FlipbookTour = () => {
     <div
       className="min-h-screen p-4 md:p-8 flex items-center justify-center"
       style={{
-        background: "linear-gradient(135deg, #3a5a6a 0%, #6b8c9a 100%)", // Hero Gradient
+        background: "linear-gradient(135deg, #f5eee0 0%, #e8dcc4 50%, #f5eee0 100%)",
       }}
     >
       <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=IM+Fell+English+SC&display=swap');
        
-        /* Replaced "Aged Paper" with the clean Off-White from the HTML */
-        .clean-paper {
-          background: #f8f6f1;
+        .aged-paper {
+          background: #f9f5eb;
+          background-image:
+            linear-gradient(0deg, transparent 24%, rgba(139, 110, 70, .03) 25%, rgba(139, 110, 70, .03) 26%, transparent 27%, transparent 74%, rgba(139, 110, 70, .03) 75%, rgba(139, 110, 70, .03) 76%, transparent 77%, transparent),
+            linear-gradient(90deg, transparent 24%, rgba(139, 110, 70, .03) 25%, rgba(139, 110, 70, .03) 26%, transparent 27%, transparent 74%, rgba(139, 110, 70, .03) 75%, rgba(139, 110, 70, .03) 76%, transparent 77%, transparent);
+          background-size: 50px 50px;
           box-shadow:
-            inset 0 0 40px rgba(0,0,0, 0.05),
-            0 0 20px rgba(0,0,0, 0.2);
+            inset 0 0 80px rgba(139, 110, 70, 0.1),
+            0 0 20px rgba(139, 110, 70, 0.15);
         }
        
-        .clean-border {
-          border: 4px solid #fff;
-          outline: 1px solid #d4c5a9;
+        .decorative-border {
+          border: 3px solid #8b6e46;
+          border-image: repeating-linear-gradient(
+            45deg,
+            #8b6e46,
+            #8b6e46 10px,
+            #a0826d 10px,
+            #a0826d 20px
+          ) 1;
         }
        
         .ink-text {
-          color: #2c2c2c;
-          font-family: 'Crimson Text', serif;
+          color: #2d2416;
+          font-family: 'IM Fell English', serif;
           line-height: 1.8;
           font-size: 1.1rem;
         }
        
         .title-text {
-          font-family: 'Crimson Text', serif;
-          color: #3a5a6a;
+          font-family: 'IM Fell English SC', serif;
+          color: #2d2416;
           letter-spacing: 0.05em;
         }
        
-        .clean-image {
-          border: 8px solid #fff;
-          box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        .aged-image {
+          filter: sepia(0.3) contrast(0.9);
+          border: 8px solid #d4c4a8;
+          box-shadow: inset 0 0 20px rgba(0,0,0,0.2);
         }
-
         .ornament {
-          color: #6b8c9a;
+          color: #8b6e46;
           font-size: 1.5em;
         }
 
@@ -313,8 +468,7 @@ const FlipbookTour = () => {
           top: 0;
           bottom: 0;
           width: 20px;
-          /* Teal Spine to match theme */
-          background: linear-gradient(to right, #2c4552, #3a5a6a, #2c4552);
+          background: linear-gradient(to right, #5a4632, #8b6e46, #5a4632);
           box-shadow: inset -2px 0 10px rgba(0,0,0,0.4);
         }
 
@@ -330,10 +484,10 @@ const FlipbookTour = () => {
           width: 6px;
         }
         .custom-scrollbar::-webkit-scrollbar-track {
-          background: #f8f6f1;
+          background: #f1ebd8;
         }
         .custom-scrollbar::-webkit-scrollbar-thumb {
-          background-color: #6b8c9a;
+          background-color: #a0826d;
           border-radius: 20px;
         }
       `}</style>
@@ -344,16 +498,15 @@ const FlipbookTour = () => {
             {/* Book spine effect */}
             <div className="book-spine" />
 
-            {/* Changed from aged-paper to clean-paper */}
-            <div className="clean-paper clean-border page-shadow ml-5 overflow-hidden h-[85vh] flex flex-col">
+            <div className="aged-paper decorative-border page-shadow ml-5 overflow-hidden h-[85vh] flex flex-col">
               {/* RENDER LOGIC */}
               {currentLocation.type === "map" ? (
                 renderMapPage()
               ) : currentLocation.type === "blank" ? (
                 <div className="flex-1 flex flex-col p-8 md:p-12 text-center overflow-hidden">
-                  <h1 className="title-text text-3xl md:text-4xl mb-6 shrink-0 font-normal">{currentLocation.title}</h1>
+                  <h1 className="title-text text-3xl md:text-4xl mb-6 shrink-0">{currentLocation.title}</h1>
                   {currentLocation.location && (
-                    <p className="ink-text text-lg text-[#6b8c9a] mb-8 italic shrink-0">{currentLocation.location}</p>
+                    <p className="ink-text text-lg text-[#8b6e46] mb-8 italic shrink-0">{currentLocation.location}</p>
                   )}
                   <div className="flex-1 overflow-y-auto custom-scrollbar px-4">
                     <div className="max-w-2xl mx-auto">
@@ -362,26 +515,25 @@ const FlipbookTour = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="mt-8 ornament text-2xl shrink-0">✦</div>
+                  <div className="mt-8 ornament text-2xl shrink-0">❦</div>
                 </div>
               ) : (
                 <div className="flex-1 flex flex-col overflow-hidden">
-                  {/* Header - Teal Background */}
+                  {/* Header */}
                   <div
-                    className="p-4 border-b-4 border-[#fff] shrink-0"
+                    className="p-4 border-b-2 border-[#8b6e46] shrink-0"
                     style={{
-                      background: "#3a5a6a", // Teal Header
-                      color: "#fff"
+                      background: "linear-gradient(to bottom, #a0826d, #8b6e46)",
                     }}
                   >
                     <div className="text-center">
-                      <p className="text-white text-xs mb-1 tracking-widest uppercase opacity-80 font-sans">
+                      <p className="text-[#f9f5eb] text-xs mb-1 tracking-widest uppercase opacity-80">
                         {currentLocation.aesthetic === "sublime" ? "— The Sublime —" : "— The Picturesque —"}
                       </p>
-                      <h2 className="font-serif text-2xl text-white mb-1">{currentLocation.title}</h2>
-                      <div className="flex justify-center gap-4 text-white opacity-90 font-serif italic">
-                        <p>{currentLocation.location}</p>
-                        <p>Anno Domini {currentLocation.year}</p>
+                      <h2 className="title-text text-2xl text-[#f9f5eb] mb-1">{currentLocation.title}</h2>
+                      <div className="flex justify-center gap-4 text-[#f9f5eb] opacity-90">
+                        <p className="ink-text text-xs">{currentLocation.location}</p>
+                        <p className="ink-text text-xs">Anno Domini {currentLocation.year}</p>
                       </div>
                     </div>
                   </div>
@@ -389,7 +541,7 @@ const FlipbookTour = () => {
                   <div className="flex-1 overflow-hidden p-6 grid md:grid-cols-2 gap-8">
                     {/* Left Column - Image & Observer */}
                     <div className="flex flex-col gap-4 overflow-y-auto pr-2 custom-scrollbar">
-                      <div className="clean-image shrink-0">
+                      <div className="aged-image shrink-0">
                         <img
                           src={currentLocation.image || "/placeholder.svg"}
                           alt={currentLocation.title}
@@ -398,34 +550,26 @@ const FlipbookTour = () => {
                       </div>
                       <p className="ink-text text-xs text-center italic opacity-60 -mt-2">— From a Contemporary Sketch —</p>
                      
-                      {/* Observer Account - Teal Border */}
-                      <div className="border-l-4 border-[#6b8c9a] pl-4 pr-2 bg-white p-4 rounded shadow-sm">
-                        <p className="text-[#6b8c9a] text-xs uppercase tracking-wide mb-2 font-bold">The Observer's Account</p>
-                        <p className="ink-text text-sm leading-relaxed italic">{currentLocation.description}</p>
-                        <div className="text-right mt-1 ornament text-xs">✦</div>
+                      <div className="border-l-4 border-[#8b6e46] pl-4 pr-2">
+                        <p className="ink-text text-xs uppercase tracking-wide mb-2 opacity-60">The Observer's Account</p>
+                        <div className="ink-text text-sm leading-relaxed italic">{currentLocation.description}</div>
+                        <div className="text-right mt-1 ornament text-xs">❦</div>
                       </div>
                     </div>
 
                     {/* Right Column - Analysis */}
                     <div className="flex flex-col gap-4 overflow-y-auto pr-2 custom-scrollbar">
-                      <div className="border-t-2 border-b-2 border-[#d4c5a9] py-4">
-                        <p className="text-[#6b8c9a] text-xs uppercase tracking-wide text-center mb-3 font-bold">
+                      <div className="border-t-2 border-b-2 border-[#8b6e46] py-4">
+                        <p className="ink-text text-xs uppercase tracking-wide text-center mb-3 opacity-60">
                           ⸙ Philosophical Disquisition ⸙
                         </p>
-                        {/* Quote Block Style */}
-                        <div className="bg-[#f8f6f1] border-l-4 border-[#3a5a6a] p-4 italic text-[#4a4a4a] font-serif">
-                          {currentLocation.aesthetic === "sublime"
-                            ? currentLocation.burkeanAnalysis
-                            : currentLocation.gilpinAnalysis}
+                        <div className="ink-text text-sm leading-relaxed px-2">
+                          {currentLocation.theory}
                         </div>
                       </div>
 
-                      {/* Exercise/Modern Box - Yellowish */}
-                      <div className="bg-[#fff9e6] p-4 border-2 border-[#e6d5a0] rounded">
-                        <p className="text-[#8a6d3b] text-xs uppercase tracking-wide mb-2 font-bold">
-                          Modern Era
-                        </p>
-                        <p className="ink-text text-sm leading-relaxed">{currentLocation.commentary}</p>
+                      <div className="bg-[#f5eee0] p-4 border border-[#d4c4a8]">
+                        <div className="ink-text text-sm leading-relaxed">{currentLocation.exercise}</div>
                       </div>
                     </div>
                   </div>
@@ -434,20 +578,20 @@ const FlipbookTour = () => {
 
               {/* Navigation */}
               <div
-                className="border-t-2 border-[#fff] p-4"
+                className="border-t-2 border-[#8b6e46] p-4"
                 style={{
-                  background: "#f0ede5", // Map/Footer BG color
+                  background: "linear-gradient(to bottom, #f5eee0, #e8dcc4)",
                 }}
               >
                 <div className="flex items-center justify-between">
                   <button
                     onClick={prevStop}
                     disabled={isFlipping}
-                    className="flex items-center gap-2 px-4 py-2 border-2 border-[#6b8c9a] bg-white hover:bg-[#f8f6f1] transition-colors disabled:opacity-50 disabled:cursor-not-allowed rounded"
-                    style={{ fontFamily: "'Crimson Text', serif" }}
+                    className="flex items-center gap-2 px-4 py-2 border-2 border-[#8b6e46] bg-[#f9f5eb] hover:bg-[#e8dcc4] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                    style={{ fontFamily: "'IM Fell English', serif" }}
                   >
-                    <ChevronLeft className="w-4 h-4" style={{ color: "#3a5a6a" }} />
-                    <span style={{ color: "#3a5a6a" }}>Previous</span>
+                    <ChevronLeft className="w-4 h-4" style={{ color: "#2d2416" }} />
+                    <span style={{ color: "#2d2416" }}>Previous</span>
                   </button>
 
                   <div className="text-center">
@@ -458,8 +602,8 @@ const FlipbookTour = () => {
                       {tourStops.map((_, idx) => (
                         <div
                           key={idx}
-                          className={`w-2 h-2 rounded-full transition-colors ${
-                            idx === currentStop ? "bg-[#3a5a6a]" : "bg-[#d4c5a9]"
+                          className={`w-2 h-2 border border-[#8b6e46] transition-colors ${
+                            idx === currentStop ? "bg-[#8b6e46]" : "bg-[#f9f5eb]"
                           }`}
                         />
                       ))}
@@ -469,11 +613,11 @@ const FlipbookTour = () => {
                   <button
                     onClick={nextStop}
                     disabled={isFlipping}
-                    className="flex items-center gap-2 px-4 py-2 border-2 border-[#6b8c9a] bg-white hover:bg-[#f8f6f1] transition-colors disabled:opacity-50 disabled:cursor-not-allowed rounded"
-                    style={{ fontFamily: "'Crimson Text', serif" }}
+                    className="flex items-center gap-2 px-4 py-2 border-2 border-[#8b6e46] bg-[#f9f5eb] hover:bg-[#e8dcc4] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                    style={{ fontFamily: "'IM Fell English', serif" }}
                   >
-                    <span style={{ color: "#3a5a6a" }}>Next</span>
-                    <ChevronRight className="w-4 h-4" style={{ color: "#3a5a6a" }} />
+                    <span style={{ color: "#2d2416" }}>Next</span>
+                    <ChevronRight className="w-4 h-4" style={{ color: "#2d2416" }} />
                   </button>
                 </div>
               </div>
@@ -481,19 +625,18 @@ const FlipbookTour = () => {
           </div>
         </div>
 
-        {/* Legend Key */}
-        <div className="clean-paper clean-border page-shadow p-6 mt-8 ml-5 rounded">
+        <div className="aged-paper decorative-border page-shadow p-6 mt-8 ml-5">
           <p className="title-text text-center text-xl mb-4">⸙ Key to the Aesthetic Categories ⸙</p>
           <div className="grid md:grid-cols-2 gap-6">
-            <div className="border-l-4 border-[#3a5a6a] pl-4">
-              <p className="title-text text-base mb-2 font-bold">THE SUBLIME</p>
+            <div className="border-l-2 border-[#2d2416] pl-4">
+              <p className="title-text text-base mb-2">THE SUBLIME</p>
               <p className="ink-text text-sm leading-relaxed">
                 Terror, Vastness, Power, Obscurity, Infinity. Experiences that overwhelm reason and produce "delightful
                 horror" — we enjoy fear when safely experienced.
               </p>
             </div>
-            <div className="border-l-4 border-[#6b8c9a] pl-4">
-              <p className="title-text text-base mb-2 font-bold">THE PICTURESQUE</p>
+            <div className="border-l-2 border-[#8b6e46] pl-4">
+              <p className="title-text text-base mb-2">THE PICTURESQUE</p>
               <p className="ink-text text-sm leading-relaxed">
                 Roughness, Irregularity, Variety within Unity. Landscapes that would make good paintings — reality
                 judged by artistic standards.
