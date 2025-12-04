@@ -120,7 +120,7 @@ const FlipbookTour = () => {
       image: "Mountains with Trees in Forground.png",
       description: (
         <>
-          <p className="mb-2"><strong>Arrival:</strong> You are standing at the base of the English Channel cliffs now, and everything has changed. Feel how the air shifts? Those pale, jagged ridges rise like fortifications against a turbulent sky. This is where Burke's theory truly awakens.</p>
+          <p className="mb-2"><strong>Arrival:</strong> You are standing at the base of the Tioga Path cliffs now, and everything has changed. Feel how the air shifts? Those pale, jagged ridges rise like fortifications against a turbulent sky. This is where Burke's theory truly awakens.</p>
           <p><strong>The View:</strong> I struggled with this painting more than any other. I kept asking: how do you paint immensity? Those fractured limestone edges, the dark pines below, the golden grasses trembling - I was trying to capture what Burke called "the artificial infinite," where broken, irregular lines make something feel endless.</p>
         </>
       ),
@@ -349,7 +349,7 @@ const FlipbookTour = () => {
             {[
               { id: 1, name: "Autumn Overlook", desc: "The Beautiful" },
               { id: 2, name: "Sunrise Path", desc: "Light as Force" },
-              { id: 3, name: "English Channel Cliffs", desc: "The Sublime of Magnitude" },
+              { id: 3, name: "Tioga Road Cliffs", desc: "The Sublime of Magnitude" },
               { id: 4, name: "Yosemite Vista", desc: "Atmospheric Dread" },
               { id: 5, name: "Coulterville Pines", desc: "Before the Storm" },
               { id: 6, name: "Inyo Forest Cliff", desc: "Terror and Indifference" },
@@ -533,7 +533,7 @@ const FlipbookTour = () => {
                       <h2 className="title-text text-2xl text-[#f9f5eb] mb-1">{currentLocation.title}</h2>
                       <div className="flex justify-center gap-4 text-[#f9f5eb] opacity-90">
                         <p className="ink-text text-xs">{currentLocation.location}</p>
-                        <p className="ink-text text-xs">Anno Domini {currentLocation.year}</p>
+                        <p className="ink-text text-xs"> 2025 {currentLocation.year}</p>
                       </div>
                     </div>
                   </div>
@@ -640,6 +640,154 @@ const FlipbookTour = () => {
               <p className="ink-text text-sm leading-relaxed">
                 Roughness, Irregularity, Variety within Unity. Landscapes that would make good paintings — reality
                 judged by artistic standards.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="aged-paper decorative-border page-shadow p-6 mt-8 ml-5">
+          <p className="title-text text-center text-xl mb-4">⸙ References & Further Reading ⸙</p>
+          <div className="space-y-4">
+            <div className="border-l-2 border-[#8b6e46] pl-4">
+              <p className="title-text text-base mb-2">Primary Texts</p>
+              <ul className="space-y-2">
+                <li className="ink-text text-sm">
+                  <a 
+                    href="https://archive.org/details/threeessayonpict00gilp" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-[#8b6e46] underline hover:text-[#5a4632]"
+                  >
+                    Gilpin, William. <em>Three Essays on Picturesque Beauty</em> (1792)
+                  </a>
+                </li>
+                <li className="ink-text text-sm">
+                  <a 
+                    href="https://www.gutenberg.org/files/15043/15043-h/15043-h.htm" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-[#8b6e46] underline hover:text-[#5a4632]"
+                  >
+                    Burke, Edmund. <em>A Philosophical Enquiry into the Origin of Our Ideas of the Sublime and Beautiful</em> (1757)
+                  </a>
+                </li>
+                <li className="ink-text text-sm">
+                  <a 
+                    href="https://www.poetryfoundation.org/poems/45527/lines-composed-a-few-miles-above-tintern-abbey" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-[#8b6e46] underline hover:text-[#5a4632]"
+                  >
+                    Wordsworth, William. <em>Lines Written a Few Miles Above Tintern Abbey</em> (1798)
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div className="border-l-2 border-[#8b6e46] pl-4">
+              <p className="title-text text-base mb-2">Secondary Scholarship</p>
+              <ul className="space-y-2">
+                <li className="ink-text text-sm">
+                  <a 
+                    href="https://www.jstor.org/stable/2933191" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-[#8b6e46] underline hover:text-[#5a4632]"
+                  >
+                    Malcolm Andrews. <em>The Search for the Picturesque</em> (1989)
+                  </a>
+                </li>
+                <li className="ink-text text-sm">
+                  <a 
+                    href="https://www.cambridge.org/core/books/romantic-sublime/44D9D93CD35F67EEAF2C7BCF69816B9E" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-[#8b6e46] underline hover:text-[#5a4632]"
+                  >
+                    Thomas Weiskel. <em>The Romantic Sublime: Studies in the Structure and Psychology of Transcendence</em> (1976)
+                  </a>
+                </li>
+                <li className="ink-text text-sm">
+                  <a 
+                    href="https://www.oxford.com/9780199645909" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-[#8b6e46] underline hover:text-[#5a4632]"
+                  >
+                    Frances Ferguson. <em>Solitude and the Sublime: Romanticism and the Aesthetics of Individuation</em> (1992)
+                  </a>
+                </li>
+                <li className="ink-text text-sm">
+                  <a 
+                    href="https://www.sup.org/books/title/?id=4847" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-[#8b6e46] underline hover:text-[#5a4632]"
+                  >
+                    Cian Duffy. <em>The Landscapes of the Sublime 1700–1830: Classic Ground</em> (2013)
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div className="border-l-2 border-[#8b6e46] pl-4">
+              <p className="title-text text-base mb-2">On the Claude Glass & Picturesque Tourism</p>
+              <ul className="space-y-2">
+                <li className="ink-text text-sm">
+                  <a 
+                    href="https://www.jstor.org/stable/2932869" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-[#8b6e46] underline hover:text-[#5a4632]"
+                  >
+                    Nigel Everett. <em>The Tory View of Landscape</em> (1994) — Chapter on visual framing devices
+                  </a>
+                </li>
+                <li className="ink-text text-sm">
+                  <a 
+                    href="https://www.routledge.com/The-Picturesque-Garden-in-Europe/Dezallier/p/book/9780415086769" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-[#8b6e46] underline hover:text-[#5a4632]"
+                  >
+                    Michel Conan, ed. <em>Picturesque: Aesthetics and Landscape Architecture</em> (2007)
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div className="border-l-2 border-[#8b6e46] pl-4">
+              <p className="title-text text-base mb-2">Geography of the Eastern Sierra</p>
+              <ul className="space-y-2">
+                <li className="ink-text text-sm">
+                  <a 
+                    href="https://www.nps.gov/yose/learn/nature/index.htm" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-[#8b6e46] underline hover:text-[#5a4632]"
+                  >
+                    National Park Service: Yosemite Valley Geography & Geology
+                  </a>
+                </li>
+                <li className="ink-text text-sm">
+                  <a 
+                    href="https://www.usgs.gov/faqs/what-eastern-sierra" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-[#8b6e46] underline hover:text-[#5a4632]"
+                  >
+                    U.S. Geological Survey: Eastern Sierra Geology
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div className="text-center mt-6 pt-4 border-t border-[#8b6e46]">
+              <p className="ink-text text-xs opacity-70">
+                <em>The Digital Claude Glass</em> is a curatorial project that synthesizes 250+ years of aesthetic theory with contemporary landscape photography.
+              </p>
+              <p className="ink-text text-xs opacity-70 mt-2">
+                Created by Jackqueline (Jack) Wilson, 2025
               </p>
             </div>
           </div>
